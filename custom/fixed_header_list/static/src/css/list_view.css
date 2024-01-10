@@ -1,0 +1,40 @@
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* This below classes are responsible for changing the texr-color, background-color and font-size
+   of ListView in odoo 15*/
+.o_list_view .table-responsive .o_list_table thead {
+    color: #8B4513;
+    font-size: 18px;
+    text-align: -webkit-center;
+    background-color: #FFE4B5;
+    border: 1px solid #0000FF;
+
+}
+
+.o_list_view .o_list_table thead > tr > th:not(.o_list_record_selector) {
+    border-left: 1px solid #dfdfdf;
+    display: table-cell;
+    max-width: 100%;
+    white-space: normal;
+    text-overflow: ellipsis;
+    vertical-align: top;
+}
+
+/* This below classes are responsible for changing the height and text-align
+   of ListView in odoo 15*/
+.o_list_view .o_list_table thead > tr > th:not(.o_list_record_selector).o_list_number_th {
+    height: 50px !important;
+    padding: auto;
+    text-align: center;
+}
+
